@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+#nav  a { 
+text-decoration: none;
+display:block;/*設定為區塊*/
+
+}
+
+#nav  a.active, #nav a:hover {
+
+background: #ffffaa;/*滑鼠滑入處變色*/
+color:#9f35ff;
+
+}
+.pics img{ position:absolute;
+   top: 18%;             
+    left: 5%;        
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+ 
+ }
+ .pics img:last-child:hover{
+     /* 滑入時第一張透明度設0 */
+      opacity:0;
+    }
+ .pics1 img{ position:absolute;
+    bottom:30px;
+    right:70px;
+
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+ 
+ }
+ .pics1 img:last-child:hover{
+     /* 滑入時第一張透明度設0 */
+    
+      opacity:0;
+    }
+
+div {
+
+  border: 3px solid #ff9224;
+   height:98%;
+   position:relative;
+}
+
+p.ex1 {
+
+  padding: 4px;
+  direction:ltr; 
+  border: 2px solid #74C1E2; 
+  
+}
+
+header {
+  background-color: #C79CE7;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+nav {
+  float: left;
+  width: 20%;
+  height: 350px; /* only for demonstration, should be removed */
+  background:   #74C1E2;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 80%;
+  background-color: pink;
+  height: 350px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #FFDB66;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+@media only screen and (max-width:1100px) {
+  /* For mobile phones: */
+  header, nav,  footer {
+    width:100%;
+
+  }
+  article{
+    height:700px;
+     width:100%;
+  }
+}
+</style>
+
+<header>
+  <h2>Chia Ling</h2>
+</header>
+<body>
+<section>
+  <nav>
+  
+      
+  <ul id="nav">
+
+  <a href="index.html">
+  <p class="ex1">
+  <i class="material-icons" style="font-size:20px;color:#FFDB66;">favorite</i>About Me</p></a>
+
+  <a href="School.html">
+  <p class="ex1">
+  <i class="material-icons" style="font-size:20px;color:#FFDB66;">favorite</i>My School</p></a>
+
+  <a href="Photo.html">
+  <p class="ex1">
+  <i class="material-icons" style="font-size:20px;color:#FFDB66;">favorite</i>My Photo</p></a>
+      
+  </ul>
+  </nav>
+  
+  <article>
+   
+    <div id="div"> 
+       <h1>My Photos</h1>
+    
+  <div1 class="pics",id="pics">
+    
+     <img src="https://chialing0403.github.io/princess.jpg"  >
+     <img src="https://chialing0403.github.io/princess1.jpg" >
+  </div1>
+
+  <div2 class="pics1",id="pics1"> 
+    <img src="https://chialing0403.github.io/photo1.jpg" >
+   <img src="https://chialing0403.github.io/photo.jpg" >
+     
+
+  </div2>
+
+   </div>
+
+  </article>
+</section>
+  
+<footer>
+  <p>:))</p>
+</footer>
+
+</body>
+</html>
